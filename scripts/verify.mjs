@@ -9,15 +9,23 @@ const plantNames = [];
 let classificationFigures = 0;
 let gameDetails = 0;
 let gameVisuals = 0;
+let fragrantCount = 0;
+let fragrantPlates = 0;
 
 for (const file of htmlFiles) {
   const full = join(root, file);
   const html = await readFile(full, 'utf8');
-  plantCount += (html.match(/class="plant-card/g) || []).length;
+  if (file === 'plants.html') plantCount += (html.match(/class="plant-card/g) || []).length;
+  if (file === 'fragrant-plants.html') {
+    fragrantCount += (html.match(/class="plant-card/g) || []).length;
+    fragrantPlates += (html.match(/class="plate"/g) || []).length;
+  }
   classificationFigures += (html.match(/class="classification-figure/g) || []).length;
   gameDetails += (html.match(/class="game-detail/g) || []).length;
   gameVisuals += (html.match(/class="game-visual/g) || []).length;
-  for (const match of html.matchAll(/class="plant-card[^>]*>[\s\S]*?<h3>([^<]+)<\/h3>/g)) plantNames.push(match[1]);
+  if (file === 'plants.html') {
+    for (const match of html.matchAll(/class="plant-card[^>]*>[\s\S]*?<h3>([^<]+)<\/h3>/g)) plantNames.push(match[1]);
+  }
 
   if (/待補|lorem ipsum|placeholder/i.test(html)) errors.push(`${file}: 發現占位文字`);
   if (html.includes('brand-mark')) errors.push(`${file}: 不應再出現圓形葉品牌圖示`);
@@ -33,20 +41,22 @@ for (const file of htmlFiles) {
   }
 }
 
-if (htmlFiles.length !== 6) errors.push(`應有 6 個 HTML 頁面，實際 ${htmlFiles.length}`);
+if (htmlFiles.length !== 7) errors.push(`應有 7 個 HTML 頁面，實際 ${htmlFiles.length}`);
 if (plantCount !== 61) errors.push(`植物卡應有 61 張，實際 ${plantCount}`);
 if (new Set(plantNames).size !== plantNames.length) errors.push('植物名稱不可重複');
+if (fragrantCount !== 25) errors.push(`芳香植物卡應有 25 張，實際 ${fragrantCount}`);
+if (fragrantPlates !== 5) errors.push(`芳香植物圖版應有 5 張，實際 ${fragrantPlates}`);
 if (classificationFigures !== 6) errors.push(`果實種子分類圖應有 6 張，實際 ${classificationFigures}`);
 if (gameDetails !== 8) errors.push(`五感遊戲應有 8 套，實際 ${gameDetails}`);
 if (gameVisuals !== 8) errors.push(`五感遊戲步驟圖應有 8 張，實際 ${gameVisuals}`);
 
 const imageDir = join(root, 'assets', 'images');
 const images = (await readdir(imageDir)).filter((name) => name.endsWith('.png'));
-if (images.length !== 36) errors.push(`IMAGE 2.0 圖片應有 36 張，實際 ${images.length}`);
+if (images.length !== 41) errors.push(`IMAGE 2.0 圖片應有 41 張，實際 ${images.length}`);
 
 if (errors.length) {
   console.error(errors.join('\n'));
   process.exit(1);
 }
 
-console.log(`PASS: ${htmlFiles.length} pages, ${plantCount} plants, ${classificationFigures} classification figures, ${gameDetails} games, ${images.length} IMAGE 2.0 assets`);
+console.log(`PASS: ${htmlFiles.length} pages, ${plantCount} campus plants, ${fragrantCount} fragrant plants, ${fragrantPlates} fragrant plates, ${classificationFigures} classification figures, ${gameDetails} games, ${images.length} IMAGE 2.0 assets`);

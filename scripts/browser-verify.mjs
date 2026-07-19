@@ -10,7 +10,7 @@ await mkdir(screenshotDir, { recursive: true });
 
 const baseUrl = process.env.BASE_URL || 'http://127.0.0.1:4173';
 const chromePath = process.env.CHROME_PATH || 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
-const pages = ['index.html', 'plants.html', 'seeds.html', 'leaves.html', 'game-one.html', 'game-two.html'];
+const pages = ['index.html', 'plants.html', 'seeds.html', 'leaves.html', 'fragrant-plants.html', 'game-one.html', 'game-two.html'];
 const viewports = [
   { name: 'desktop', width: 1440, height: 1000 },
   { name: 'tablet', width: 768, height: 1024 },
@@ -62,6 +62,7 @@ for (const viewport of viewports) {
     if (file === 'plants.html' && (state.cards !== 61 || state.plates !== 13)) failures.push(`${viewport.name}/${file}: cards=${state.cards}, plates=${state.plates}`);
     if (file === 'seeds.html' && state.classificationFigures !== 6) failures.push(`${viewport.name}/${file}: classificationFigures=${state.classificationFigures}`);
     if (file === 'leaves.html' && state.morphFigures !== 5) failures.push(`${viewport.name}/${file}: morphFigures=${state.morphFigures}`);
+    if (file === 'fragrant-plants.html' && (state.cards !== 25 || state.plates !== 5)) failures.push(`${viewport.name}/${file}: cards=${state.cards}, plates=${state.plates}`);
     if ((file === 'game-one.html' || file === 'game-two.html') && (state.gameDetails !== 4 || state.gameVisuals !== 4)) failures.push(`${viewport.name}/${file}: gameDetails=${state.gameDetails}, gameVisuals=${state.gameVisuals}`);
     if (messages.length) failures.push(`${viewport.name}/${file}: ${messages.join(' | ')}`);
 
@@ -75,6 +76,10 @@ for (const viewport of viewports) {
       await page.locator('.morph-card').last().locator('figure').scrollIntoViewIfNeeded();
       await page.screenshot({ path: join(screenshotDir, `${stem}-tail-${viewport.name}.png`) });
     }
+    if (file === 'fragrant-plants.html') {
+      await page.evaluate(() => scrollTo(0, document.documentElement.scrollHeight));
+      await page.screenshot({ path: join(screenshotDir, `${stem}-tail-${viewport.name}.png`) });
+    }
     await page.close();
   }
   await context.close();
@@ -85,4 +90,4 @@ if (failures.length) {
   console.error(failures.join('\n'));
   process.exit(1);
 }
-console.log('PASS: 18 page/viewport combinations; 61 cards; 13 plant plates; 5 leaf morphology figures; 6 classification figures; 8 sensory games; no browser errors, broken images, or horizontal overflow');
+console.log('PASS: 21 page/viewport combinations; 61 campus plants; 25 fragrant plants; 5 fragrant plates; 13 plant plates; 5 leaf morphology figures; 6 classification figures; 8 sensory games; no browser errors, broken images, or horizontal overflow');
