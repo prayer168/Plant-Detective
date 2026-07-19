@@ -56,8 +56,9 @@
 
 ## GitHub Pages 公開環境
 
-- 版本 1.3.2 的公開網址為 `https://prayer168.github.io/Plant-Detective/`；當時首頁、植物頁、CSS 與教材圖檔均回傳 HTTP 200。
-- 本次 1.4.0 已在本機以 7 頁 × 3 viewport 驗證；待使用者要求發布後，再推送並重新檢查公開版的「自主學習」頁。
+- 版本 1.4.1 推送至 `main` 後，GitHub Pages 狀態為 `built`。
+- 公開首頁、`self-learning.html` 與 `assets/social-preview.png` 均回傳 HTTP 200；縮圖 MIME 為 `image/png`、尺寸為 1200×630，首頁含正式絕對網址的 Open Graph 與 Twitter large-image metadata。
+- 公開站以 390×844 再次檢查「五感體驗」與「自主學習」：五感體驗完整載入 8 套活動；自主學習完整載入 9 張資源卡；兩頁皆無主控台錯誤、破圖或水平溢出。
 
 ## 已知限制
 
