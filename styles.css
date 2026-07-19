@@ -70,6 +70,7 @@ h1 { margin: 0; font-size: clamp(3.4rem, 9vw, 7.5rem); letter-spacing: -.07em; }
 .plate img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: .82rem; }
 .plate figcaption { padding: .75rem .45rem .2rem; color: var(--muted); font-size: .88rem; }
 .specimen-list { list-style: none; padding: 0; margin: 0 0 4.5rem; display: grid; grid-template-columns: repeat(5, 1fr); gap: .75rem; }
+.specimen-list.single-specimen { grid-template-columns: minmax(0, 25rem); justify-content: center; }
 .plant-card { position: relative; min-width: 0; background: var(--card); border: 1px solid var(--line); border-top: 5px solid var(--leaf); padding: 1rem; border-radius: .9rem; }
 .plant-card[data-caution="true"] { border-top-color: var(--coral); }
 .plant-card h3 { font-family: inherit; font-size: 1.1rem; margin: 0; }
@@ -129,6 +130,7 @@ h1 { margin: 0; font-size: clamp(3.4rem, 9vw, 7.5rem); letter-spacing: -.07em; }
   .hero-copy { margin-bottom: 2.3rem; }
   h1 { font-size: 3.25rem; }
   .home-grid, .feature-grid, .safety-grid, .specimen-list, .seed-grid, .steps, .station-grid { grid-template-columns: 1fr; }
+  .specimen-list.single-specimen { grid-template-columns: 1fr; }
   .plate { margin-inline: -.5rem; padding: .35rem; }
   .plate img { aspect-ratio: 4 / 3; }
   .morph-card { padding: .7rem; }

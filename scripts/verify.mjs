@@ -26,12 +26,12 @@ for (const file of htmlFiles) {
 }
 
 if (htmlFiles.length !== 6) errors.push(`應有 6 個 HTML 頁面，實際 ${htmlFiles.length}`);
-if (plantCount !== 60) errors.push(`植物卡應有 60 張，實際 ${plantCount}`);
+if (plantCount !== 61) errors.push(`植物卡應有 61 張，實際 ${plantCount}`);
 if (new Set(plantNames).size !== plantNames.length) errors.push('植物名稱不可重複');
 
 const imageDir = join(root, 'assets', 'images');
 const images = (await readdir(imageDir)).filter((name) => name.endsWith('.png'));
-if (images.length !== 20) errors.push(`IMAGE 2.0 圖片應有 20 張，實際 ${images.length}`);
+if (images.length !== 21) errors.push(`IMAGE 2.0 圖片應有 21 張，實際 ${images.length}`);
 
 if (errors.length) {
   console.error(errors.join('\n'));

@@ -18,14 +18,18 @@
 12. [臺灣生命大百科：蟲屎](https://taieol.tw/pages/41397/articles) — 查核 `Melanolepis multiglandulosa`、星狀毛與幼葉裂片。
 13. [臺灣生命大百科：構樹](https://taieol.tw/pages/45646) — 查核 `Broussonetia papyrifera` 與接受中文名。
 14. [臺灣生命大百科：槲樹](https://taieol.tw/pages/42098) — 查核 `Quercus dentata`；部分中文資料亦使用「槲櫟」，教材以「槲櫟（槲樹）」並列避免混淆。
+15. [臺灣植物資訊整合查詢系統：孔雀豆](https://tai2.ntu.edu.tw/species/409%20132%2011%200) — 查核台灣栽培紀錄、正式中文名「孔雀豆」與學名 `Adenanthera pavonina`。
+16. [台北植物園：孔雀豆](https://tpbg.tfri.gov.tw/plants/plants_info.php?rid=925) — 查核二回羽狀複葉、黃白色花序、鐮刀狀莢果與鮮紅光亮種子。
+17. [Kew Science：Adenanthera pavonina](https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A317691-2) — 交叉確認接受學名與豆科分類。
 
 ## 教學簡化
 
 - 圖版為 IMAGE 2.0 生成的比較示意，不代表同一株植物會在同一時間同時具有葉、花與成熟果實。
 - 圖中標本按欄位排列，名稱與辨識重點以 HTML 文字為準；實地鑑定應合併葉序、葉形、花、果、樹皮與生長型等多項證據。
-- 「常見」受地區、校園植栽歷史、海拔與管理方式影響，教材不宣稱每一所台灣校園都能看到全部 60 種。
+- 「常見」受地區、校園植栽歷史、海拔與管理方式影響，教材不宣稱每一所台灣校園都能看到全部 61 種。
 - 使用者提供的「紅刺肉兜樹」依植物資料正式名稱修正為「紅刺露兜樹」；「槲櫟」則在卡片中並列「槲樹」以處理中文俗名差異。
+- 「大實孔雀豆」在台灣植物資料庫多以「孔雀豆」收錄，教材以「大實孔雀豆（孔雀豆）」並列，並使用接受學名 `Adenanthera pavonina`。
 
 ## 圖像
 
-20 張 PNG 圖像皆由 OpenAI IMAGE 2.0 於 2026-07-19 依專案專用提示詞產製，未嵌入外部照片或第三方圖庫素材。完整提示詞摘要見 `docs/image-prompts.md`。
+21 張 PNG 圖像皆由 OpenAI IMAGE 2.0 於 2026-07-19 依專案專用提示詞產製，未嵌入外部照片或第三方圖庫素材。完整提示詞摘要見 `docs/image-prompts.md`。
