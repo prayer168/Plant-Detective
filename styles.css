@@ -46,7 +46,6 @@ main { min-height: 70vh; }
 h1, h2, h3 { font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif; line-height: 1.2; }
 h1 { margin: 0; font-size: clamp(3.4rem, 9vw, 7.5rem); letter-spacing: -.07em; }
 .hero-sub { max-width: 34rem; font-size: clamp(1.05rem, 2vw, 1.35rem); font-weight: 650; margin: 1.1rem 0 0; }
-.hero-note { display: inline-block; margin-top: 1.2rem; padding: .65rem .9rem; background: rgba(255,255,255,.86); border-left: 4px solid var(--sun); font-size: .93rem; }
 .section { padding: clamp(4rem, 8vw, 7rem) 0; }
 .section + .section { border-top: 1px solid var(--line); }
 .section-tint { background: #eef2e6; }
