@@ -50,9 +50,9 @@
 
 ## GitHub Pages 公開環境
 
-- 提交 `a075f76` 推送至 `main` 後，GitHub Pages 狀態為 `built`。
-- 公開網址：`https://prayer168.github.io/Plant-Detective/`；首頁、植物頁、CSS 與 4 張新增圖版均回傳 HTTP 200。
-- 公開植物頁實測為 60 張不重複植物卡與 12 張圖版。
+- 提交 `d265169` 推送至 `main` 後，GitHub Pages 狀態為 `built`。
+- 公開網址：`https://prayer168.github.io/Plant-Detective/`；首頁、植物頁、CSS 與新增的 `plants-13-peacock-tree.png` 均回傳 HTTP 200。
+- 公開植物頁實測為 61 張不重複植物卡與 13 張圖版，且包含「大實孔雀豆」。
 - 公開站再次通過 6 頁 × 3 viewport 共 18 組 Playwright 測試，無主控台錯誤、破圖或水平溢出。
 
 ## 已知限制
