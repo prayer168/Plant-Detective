@@ -6,6 +6,10 @@
 
 - `hero-campus-detective.png`：台灣校園晨光、榕樹與兒童以放大鏡／筆記本進行不採摘觀察。
 - `plants-01-canopy.png` 至 `plants-08-garden.png`：每張固定五欄，依 HTML 物種順序呈現整株、葉與果實／花部辨識特徵；茄苳三出複葉與黑板樹細長蓇葖果另以精修提示修正。
+- `plants-09-conifers.png`：琉球松、紅刺露兜樹、千頭木麻黃、羅漢松、側柏；強調兩針一束、紅刺與支柱根、節狀綠枝、紅色種托、扁平鱗葉。
+- `plants-10-fruit-trees.png`：構樹、桂花、蟲屎、緬梔、龍眼；強調變異裂葉與球形聚合果、芳香小花、星狀毛與蒴果、乳汁與成對蓇葖果、羽狀複葉與黑種子。
+- `plants-11-useful-plants.png`：千年木、香茅、大葉欖仁、苦楝、無患子；強調彩色帶狀葉、叢生芳香草、層狀樹冠、紫花黃果、琥珀色皂素果皮。
+- `plants-12-oaks-and-palms.png`：槲櫟（槲樹）、捲斗櫟、芒果、光蠟樹、酒瓶椰子；強調圓裂大葉與鱗片殼斗、環紋反捲殼斗、紅褐嫩葉、翅果、膨大酒瓶形樹幹。
 - `seed-tools.png`：俯視紙袋、紙盤、手套、放大鏡、鉛筆、尺與地面落果，排除刀具、化學品與採摘情境。
 - `leaf-shapes.png`：八種葉形；`leaf-margins.png`：七種葉緣；`leaf-veins.png`：四種葉脈；`leaf-arrangements.png`：五種葉序。
 - `game-one.png`：教師預備的透明盆根系、莖、落葉、花與禾草五站觀察。
