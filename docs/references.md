@@ -30,6 +30,10 @@
 24. [衛生福利部食品藥物管理署：蔬果清洗](https://www.fda.gov.tw/tc/newsContent.aspx?cid=5049&id=25162) — 味覺活動採用食材先清洗再切分、流動水清洗等衛生原則。
 25. [衛生福利部食品藥物管理署：食品過敏原資訊](https://www.fda.gov.tw/tc/newsContent.aspx?cid=4&id=t622859) — 味覺活動的過敏原、成分資訊與飲食安全提醒。
 26. [美國國家聽力暨溝通障礙研究院：Taste Disorders](https://www.nidcd.nih.gov/health/taste-disorders) — 查核甜、酸、鹹、苦、鮮等基本味覺，以及味覺、嗅覺、質地與溫度共同形成風味。
+27. [農業部農業知識入口網：葉種類](https://kmweb.moa.gov.tw/techcd/%E4%BD%9C%E7%89%A9%E7%97%85%E8%9F%B2%E5%AE%B3%E8%88%87%E8%82%A5%E5%9F%B9%E7%AE%A1%E7%90%86%E6%8A%80%E8%A1%93%E8%B3%87%E6%96%99/ebook/fthescd/%E8%91%89/%E8%91%89_%E8%91%89%E7%B8%BD%E9%A1%9E.htm) — 查核複葉、小葉、葉軸、奇數／偶數羽狀，以及一回、二回、三回羽狀複葉定義。
+28. [Virginia Tech Extension：Botany](https://www.pubs.ext.vt.edu/ANR/ANR-10/ANR-10.html) — 交叉查核一回／二回羽狀複葉、奇數／偶數羽狀與頂小葉的判讀。
+29. [NC State Extension：Botany](https://content.ces.ncsu.edu/extension-gardener-handbook/3-botany) — 交叉查核小葉基部沒有腋芽、整片複葉基部才有腋芽，以及二回、三回羽狀複葉。
+30. [農業部農業知識入口網：苦楝](https://kmweb.moa.gov.tw/subject/subject.php?id=27035) — 查核苦楝為二至三回奇數羽狀複葉，可作為校園多回羽狀複葉觀察例。
 
 ## 教學簡化
 
@@ -41,7 +45,8 @@
 - 果實頁將「形成來源」（單果、聚合果、複果、附果）與「果皮質地／開裂方式」（肉質果、乾燥開裂果、乾燥不開裂果）分成兩條分類軸，避免把可同時成立的標籤誤列為互斥選項。
 - 五感遊戲中的氣味和觸感描述容許個體差異；計分以可重查的觀察證據、比較與合作為主，不以猜對植物名稱作唯一目標。
 - 味覺活動不使用校園採集材料，只能使用教師事前確認來源、成分、過敏風險並清洗分裝的可食香草；學生可選擇不品嘗。
+- 羽狀複葉以兩條線索判讀：葉軸末端有無頂小葉可分奇數／偶數羽狀；葉軸分枝層級則分一回、二回、三回至多回羽狀。小葉或羽片基部沒有腋芽，整片複葉的葉柄基部才有。
 
 ## 圖像
 
-35 張 PNG 圖像皆由 OpenAI IMAGE 2.0 於 2026-07-19 依專案專用提示詞產製，未嵌入外部照片或第三方圖庫素材。完整提示詞摘要見 `docs/image-prompts.md`。
+36 張 PNG 圖像皆由 OpenAI IMAGE 2.0 於 2026-07-19 依專案專用提示詞產製，未嵌入外部照片或第三方圖庫素材。完整提示詞摘要見 `docs/image-prompts.md`。

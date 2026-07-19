@@ -40,7 +40,7 @@ if (gameVisuals !== 8) errors.push(`五感遊戲步驟圖應有 8 張，實際 $
 
 const imageDir = join(root, 'assets', 'images');
 const images = (await readdir(imageDir)).filter((name) => name.endsWith('.png'));
-if (images.length !== 35) errors.push(`IMAGE 2.0 圖片應有 35 張，實際 ${images.length}`);
+if (images.length !== 36) errors.push(`IMAGE 2.0 圖片應有 36 張，實際 ${images.length}`);
 
 if (errors.length) {
   console.error(errors.join('\n'));
