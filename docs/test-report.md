@@ -48,7 +48,13 @@
 
 `vercel:agent-browser-verify` 指定的 `agent-browser` CLI 在本機 PATH 不存在；改用同一工作區可用的 Playwright 搭配已安裝 Google Chrome 執行等效的載入、主控台、HTTP、截圖、導航、圖片與響應式檢查。
 
+## GitHub Pages 公開環境
+
+- 提交 `a075f76` 推送至 `main` 後，GitHub Pages 狀態為 `built`。
+- 公開網址：`https://prayer168.github.io/Plant-Detective/`；首頁、植物頁、CSS 與 4 張新增圖版均回傳 HTTP 200。
+- 公開植物頁實測為 60 張不重複植物卡與 12 張圖版。
+- 公開站再次通過 6 頁 × 3 viewport 共 18 組 Playwright 測試，無主控台錯誤、破圖或水平溢出。
+
 ## 已知限制
 
 - IMAGE 2.0 圖版是教學比較示意，不可取代實物或正式植物檢索表；同一欄的花、果、成熟葉可能不是同一季節同時出現。
-- 本次未部署公開網址，未執行公開環境或社群預覽驗證。
