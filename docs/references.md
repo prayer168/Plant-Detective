@@ -52,6 +52,15 @@
 46. [Kew Science：Psidium guajava](https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A600841-1) — 交叉查核番石榴接受學名與灌木／小喬木生長型。
 47. [農業部農業知識入口網：柚子小百科](https://kmweb.moa.gov.tw/theme_data.php?id=53802&sub_theme=agri_life&theme=news) — 查核柚子的 `Citrus maxima` 名稱、常綠樹型及臺灣常見栽培情形。
 48. [Kew Science：Citrus maxima](https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A30075266-2/general-information) — 交叉查核柚子接受學名、喬木型及大型厚果皮果實。
+49. [臺灣物種名錄 TaiCOL：關於](https://taicol.tw/zh-hant/about) — 查核其整合臺灣物種學名、中文名、同物異名、分類與原生／外來等資訊；用於自主學習頁的名稱核對建議。
+50. [Plants of TAIWAN：台灣植物資訊整合查詢系統](https://tai2.ntu.edu.tw/) — 查核其提供找植物、找標本、電子書、數位標本及植物誌資料；由國立臺灣大學生態學與演化生物學研究所維護。
+51. [農業部農業知識入口網：植物圖鑑](https://kmweb.moa.gov.tw/?FID=14) — 查核農業部入口網設有植物圖鑑與關鍵字查詢；用於常見園藝與作物植物的初步比對。
+52. [臺灣生物多樣性資訊機構 TaiBIF：關於](https://portal.taibif.tw/zh-hant/about-taibif) — 查核其為 GBIF 臺灣國家節點，推動臺灣生物多樣性資訊的開放、整合與教育資源。
+53. [Kew Science：Plants of the World Online](https://powo.science.kew.org/about) — 查核其提供全球維管束植物的分類、辨識、影像、分布、特徵、保育狀態與用途資料。
+54. [iNaturalist：About](https://www.inaturalist.org/pages/about) — 查核其為非營利公民科學社群，支援觀察紀錄、社群協助辨識與自然學習；不把自動辨識當唯一證據。
+55. [Pl@ntNet：About](https://plantnet.org/en/about/) — 查核其為以影像辨識及社群查證協助植物辨識與盤點的公民科學平台。
+56. [GBIF：What is GBIF?](https://www.gbif.org/what-is-gbif) — 查核其為各國政府資助的全球生物多樣性開放資料網絡，提供物種紀錄、分類與資料集。
+57. [Encyclopedia of Life](https://eol.org/) — 查核其為提供全球生命知識與生物探索入口的平台；自主學習頁將其定位為延伸閱讀，學名仍應回到專業植物資料庫核對。
 
 ## 教學簡化
 
@@ -68,4 +77,4 @@
 
 ## 圖像
 
-43 張 PNG 圖像皆由 OpenAI IMAGE 2.0 於 2026-07-19 依專案專用提示詞產製，未嵌入外部照片或第三方圖庫素材。完整提示詞摘要見 `docs/image-prompts.md`。
+44 張 PNG 圖像皆由 OpenAI IMAGE 2.0 於 2026-07-19 依專案專用提示詞產製，未嵌入外部照片或第三方圖庫素材。完整提示詞摘要見 `docs/image-prompts.md`。

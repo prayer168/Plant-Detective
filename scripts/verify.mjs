@@ -41,6 +41,10 @@ for (const file of htmlFiles) {
   }
 }
 
+const gameFragment = await readFile(join(root, 'game-two.fragment'), 'utf8');
+gameDetails += (gameFragment.match(/class="game-detail/g) || []).length;
+gameVisuals += (gameFragment.match(/class="game-visual/g) || []).length;
+
 if (htmlFiles.length !== 7) errors.push(`應有 7 個 HTML 頁面，實際 ${htmlFiles.length}`);
 if (plantCount !== 61) errors.push(`植物卡應有 61 張，實際 ${plantCount}`);
 if (new Set(plantNames).size !== plantNames.length) errors.push('植物名稱不可重複');
@@ -52,11 +56,17 @@ if (gameVisuals !== 8) errors.push(`五感遊戲步驟圖應有 8 張，實際 $
 
 const imageDir = join(root, 'assets', 'images');
 const images = (await readdir(imageDir)).filter((name) => name.endsWith('.png'));
-if (images.length !== 43) errors.push(`IMAGE 2.0 圖片應有 43 張，實際 ${images.length}`);
+await access(join(root, 'assets', 'social-preview.png'));
+const imageAssetCount = images.length + 1;
+if (imageAssetCount !== 44) errors.push(`IMAGE 2.0 圖片應有 44 張，實際 ${imageAssetCount}`);
+const indexHtml = await readFile(join(root, 'index.html'), 'utf8');
+for (const marker of ['og:image', 'twitter:card', 'https://prayer168.github.io/Plant-Detective/assets/social-preview.png']) {
+  if (!indexHtml.includes(marker)) errors.push(`index.html: 缺少社群預覽 metadata ${marker}`);
+}
 
 if (errors.length) {
   console.error(errors.join('\n'));
   process.exit(1);
 }
 
-console.log(`PASS: ${htmlFiles.length} pages, ${plantCount} campus plants, ${fragrantCount} fragrant plants, ${fragrantPlates} fragrant plates, ${classificationFigures} classification figures, ${gameDetails} games, ${images.length} IMAGE 2.0 assets`);
+console.log(`PASS: ${htmlFiles.length} pages, ${plantCount} campus plants, ${fragrantCount} fragrant plants, ${fragrantPlates} fragrant plates, ${classificationFigures} classification figures, ${gameDetails} games, ${imageAssetCount} IMAGE 2.0 assets`);
