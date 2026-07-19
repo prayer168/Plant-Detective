@@ -37,11 +37,17 @@
 31. [農業部農業知識入口網：香草植物栽培要領](https://kmweb.moa.gov.tw/theme_data.php?id=53451&sub_theme=variety&theme=news) — 查核香草植物可由根、莖、葉、花、果實或種子提供特殊香氣，以及揮發性成分概念。
 32. [農業部農業知識入口網：桂花](https://kmweb.moa.gov.tw/theme_data.php?id=153&theme=plant_illustration) — 查核桂花為常綠灌木或小喬木、對生革質葉、葉腋小花與甜香。
 33. [農業部農業知識入口網：茉莉花](https://kmweb.moa.gov.tw/theme_data.php?id=60&theme=plant_illustration) — 查核茉莉為常綠木質藤本或灌木、對生葉、白色香花與臺灣常見栽培情形。
-34. [Kew Science：Plants of the World Online](https://powo.science.kew.org/) — 交叉確認 25 種芳香植物的接受學名、異名與木本／草本生長型。
+34. [Kew Science：Plants of the World Online](https://powo.science.kew.org/) — 交叉確認 30 種芳香植物的接受學名、異名與木本／草本生長型。
 35. [Kew Science：Calocedrus formosana](https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A294855-1) — 查核臺灣肖楠接受學名、臺灣原生分布與喬木生長型。
 36. [NC State Extension：Gardenia jasminoides](https://plants.ces.ncsu.edu/plants/gardenia-jasminoides/) — 交叉查核黃梔對生或輪生葉、白色芳香花、黃橙果實及不可自行食用提醒。
 37. [NC State Extension：Cestrum](https://plants.ces.ncsu.edu/plants/cestrum/) — 查核夜香木的木質灌木型、細管狀香花與全株毒性安全提醒。
 38. [NC State Extension：左手香](https://plants.ces.ncsu.edu/plants/plectranthus-amboinicus/common-name/mexican-mint/) — 查核左手香為多年生草本、厚而有毛的葉片及強烈芳香。
+39. [NC State Extension：楓香](https://plants.ces.ncsu.edu/plants/liquidambar-formosana/) — 查核 `Liquidambar formosana`、三裂單葉、刺球狀果實與落葉喬木型。
+40. [農業部農業知識入口網：側柏](https://kmweb.moa.gov.tw/theme_data.php?id=508&theme=plant_illustration) — 查核側柏為常綠喬木及常見園藝栽培資料。
+41. [Kew Science：Camellia sinensis](https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A828548-1/general-information) — 查核茶樹為常綠灌木、葉緣鋸齒、白色香花與三瓣果實。
+42. [NC State Extension：Pistacia chinensis](https://plants.ces.ncsu.edu/plants/pistacia-chinensis/) — 查核黃連木為落葉木本、羽狀複葉與果實成串。
+43. [Kew Science：Callistemon viminalis](https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A591427-1) — 查核串錢柳舊名 `Callistemon viminalis` 為 `Melaleuca viminalis` 的異名；教材並列說明以利校園名牌對照。
+44. [NC State Extension：Melaleuca viminalis](https://plants.ces.ncsu.edu/plants/melaleuca-viminalis/common-name/crimson-bottlebrush/) — 查核下垂枝、紅色瓶刷花序與小喬木型。
 
 ## 教學簡化
 
@@ -54,8 +60,8 @@
 - 五感遊戲中的氣味和觸感描述容許個體差異；計分以可重查的觀察證據、比較與合作為主，不以猜對植物名稱作唯一目標。
 - 味覺活動不使用校園採集材料，只能使用教師事前確認來源、成分、過敏風險並清洗分裝的可食香草；學生可選擇不品嘗。
 - 羽狀複葉以兩條線索判讀：葉軸末端有無頂小葉可分奇數／偶數羽狀；葉軸分枝層級則分一回、二回、三回至多回羽狀。小葉或羽片基部沒有腋芽，整片複葉的葉柄基部才有。
-- 芳香植物頁所稱「會香」包含空氣中可直接聞到的花香，以及葉片、果皮、樹脂或木材受擾動後較明顯的氣味；教材不要求折葉、刮皮或入口。前 20 種為木本或基部木質化植物，後 5 種為草本。
+- 芳香植物頁所稱「會香」包含空氣中可直接聞到的花香，以及葉片、果皮、樹脂或木材受擾動後較明顯的氣味；教材不要求折葉、刮皮或入口。前 25 種為木本或基部木質化植物，後 5 種為草本；楓香的香脂特別強調不得以割傷樹皮取得。
 
 ## 圖像
 
-41 張 PNG 圖像皆由 OpenAI IMAGE 2.0 於 2026-07-19 依專案專用提示詞產製，未嵌入外部照片或第三方圖庫素材。完整提示詞摘要見 `docs/image-prompts.md`。
+42 張 PNG 圖像皆由 OpenAI IMAGE 2.0 於 2026-07-19 依專案專用提示詞產製，未嵌入外部照片或第三方圖庫素材。完整提示詞摘要見 `docs/image-prompts.md`。

@@ -44,15 +44,15 @@ for (const file of htmlFiles) {
 if (htmlFiles.length !== 7) errors.push(`應有 7 個 HTML 頁面，實際 ${htmlFiles.length}`);
 if (plantCount !== 61) errors.push(`植物卡應有 61 張，實際 ${plantCount}`);
 if (new Set(plantNames).size !== plantNames.length) errors.push('植物名稱不可重複');
-if (fragrantCount !== 25) errors.push(`芳香植物卡應有 25 張，實際 ${fragrantCount}`);
-if (fragrantPlates !== 5) errors.push(`芳香植物圖版應有 5 張，實際 ${fragrantPlates}`);
+if (fragrantCount !== 30) errors.push(`芳香植物卡應有 30 張，實際 ${fragrantCount}`);
+if (fragrantPlates !== 6) errors.push(`芳香植物圖版應有 6 張，實際 ${fragrantPlates}`);
 if (classificationFigures !== 6) errors.push(`果實種子分類圖應有 6 張，實際 ${classificationFigures}`);
 if (gameDetails !== 8) errors.push(`五感遊戲應有 8 套，實際 ${gameDetails}`);
 if (gameVisuals !== 8) errors.push(`五感遊戲步驟圖應有 8 張，實際 ${gameVisuals}`);
 
 const imageDir = join(root, 'assets', 'images');
 const images = (await readdir(imageDir)).filter((name) => name.endsWith('.png'));
-if (images.length !== 41) errors.push(`IMAGE 2.0 圖片應有 41 張，實際 ${images.length}`);
+if (images.length !== 42) errors.push(`IMAGE 2.0 圖片應有 42 張，實際 ${images.length}`);
 
 if (errors.length) {
   console.error(errors.join('\n'));

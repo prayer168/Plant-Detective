@@ -62,7 +62,7 @@ for (const viewport of viewports) {
     if (file === 'plants.html' && (state.cards !== 61 || state.plates !== 13)) failures.push(`${viewport.name}/${file}: cards=${state.cards}, plates=${state.plates}`);
     if (file === 'seeds.html' && state.classificationFigures !== 6) failures.push(`${viewport.name}/${file}: classificationFigures=${state.classificationFigures}`);
     if (file === 'leaves.html' && state.morphFigures !== 5) failures.push(`${viewport.name}/${file}: morphFigures=${state.morphFigures}`);
-    if (file === 'fragrant-plants.html' && (state.cards !== 25 || state.plates !== 5)) failures.push(`${viewport.name}/${file}: cards=${state.cards}, plates=${state.plates}`);
+    if (file === 'fragrant-plants.html' && (state.cards !== 30 || state.plates !== 6)) failures.push(`${viewport.name}/${file}: cards=${state.cards}, plates=${state.plates}`);
     if ((file === 'game-one.html' || file === 'game-two.html') && (state.gameDetails !== 4 || state.gameVisuals !== 4)) failures.push(`${viewport.name}/${file}: gameDetails=${state.gameDetails}, gameVisuals=${state.gameVisuals}`);
     if (messages.length) failures.push(`${viewport.name}/${file}: ${messages.join(' | ')}`);
 
@@ -90,4 +90,4 @@ if (failures.length) {
   console.error(failures.join('\n'));
   process.exit(1);
 }
-console.log('PASS: 21 page/viewport combinations; 61 campus plants; 25 fragrant plants; 5 fragrant plates; 13 plant plates; 5 leaf morphology figures; 6 classification figures; 8 sensory games; no browser errors, broken images, or horizontal overflow');
+console.log('PASS: 21 page/viewport combinations; 61 campus plants; 30 fragrant plants; 6 fragrant plates; 13 plant plates; 5 leaf morphology figures; 6 classification figures; 8 sensory games; no browser errors, broken images, or horizontal overflow');
