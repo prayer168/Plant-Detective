@@ -1,0 +1,9 @@
+{
+  "name": "plant-detective",
+  "version": "1.0.0",
+  "private": true,
+  "description": "植物偵探：台灣校園植物靜態觀察教材",
+  "scripts": {
+    "check": "node scripts/verify.mjs"
+  }
+}
