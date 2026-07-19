@@ -109,6 +109,58 @@ h1 { margin: 0; font-size: clamp(3.4rem, 9vw, 7.5rem); letter-spacing: -.07em; }
 .record-table th, .record-table td { border: 1px solid #7f8a83; padding: .7rem; text-align: left; vertical-align: top; }
 .record-table td { height: 4.4rem; }
 .note-lines { min-height: 9rem; margin-top: 1rem; background: repeating-linear-gradient(to bottom, transparent 0 2.1rem, #adb6af 2.1rem calc(2.1rem + 1px)); }
+.classification-figure, .game-visual { margin: 2rem 0; padding: .7rem; background: white; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.classification-figure img, .game-visual img { width: 100%; aspect-ratio: 3 / 2; object-fit: contain; border-radius: .82rem; background: #fffaf0; }
+.classification-figure figcaption, .game-visual figcaption { padding: .75rem .45rem .2rem; color: var(--muted); font-size: .88rem; }
+.classification-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .85rem; margin: 1rem 0 3rem; }
+.classification-grid.five-up { grid-template-columns: repeat(5, 1fr); }
+.classification-card { padding: 1.1rem; border: 1px solid var(--line); border-top: 4px solid var(--leaf); border-radius: .9rem; background: var(--card); }
+.classification-card h3 { margin: 0 0 .45rem; font-family: inherit; font-size: 1.05rem; }
+.classification-card p { margin: 0; color: var(--muted); font-size: .9rem; }
+.concept-note { margin: 1.5rem 0 0; padding: 1.1rem 1.25rem; border-left: 5px solid var(--coral); background: #fff; }
+.steps.steps-six { grid-template-columns: repeat(3, 1fr); }
+.source-panel { display: grid; grid-template-columns: minmax(240px, .65fr) minmax(0, 1.1fr); gap: 1.5rem 2.5rem; align-items: start; }
+.source-panel h2 { font-size: clamp(2rem, 4vw, 3.4rem); }
+.source-panel > p { margin: .3rem 0 0; }
+.source-list { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, 1fr); gap: .65rem 1.5rem; margin: 0; padding-left: 1.2rem; }
+.source-list a { color: var(--leaf-dark); text-underline-offset: .18em; }
+.table-wrap { width: 100%; overflow-x: auto; border: 1px solid var(--line); border-radius: 1rem; background: white; box-shadow: var(--shadow); }
+.overview-table { width: 100%; min-width: 760px; border-collapse: collapse; font-size: .92rem; }
+.overview-table caption { padding: 1rem; text-align: left; font-weight: 900; color: var(--leaf-dark); }
+.overview-table th, .overview-table td { padding: .82rem .9rem; text-align: left; vertical-align: top; border-top: 1px solid var(--line); }
+.overview-table thead th { background: var(--leaf); color: white; }
+.overview-table tbody tr:nth-child(even) { background: #f5f5ec; }
+.overview-table a { color: var(--leaf); font-weight: 800; }
+.role-strip { margin-top: 1.4rem; padding: 1rem 1.1rem; border-radius: 1rem; background: #fff3d7; border: 1px solid #e7c981; }
+.role-strip strong { margin-right: .45rem; }
+.role-strip span { display: inline-block; margin: .2rem; padding: .2rem .55rem; border-radius: 999px; background: white; font-size: .84rem; font-weight: 800; }
+.role-strip p { margin: .55rem 0 0; color: var(--muted); }
+.game-detail { scroll-margin-top: 80px; }
+.game-header { display: flex; justify-content: space-between; gap: 2rem; align-items: end; }
+.game-header > div:first-child { max-width: 48rem; }
+.game-header .activity-meta { justify-content: flex-end; max-width: 25rem; }
+.game-facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; margin: 1.4rem 0; }
+.game-facts section, .timeline-box, .game-columns section, .grade-variants section, .science-safety section { background: var(--card); border: 1px solid var(--line); border-radius: .95rem; padding: 1.1rem; }
+.game-facts h3, .timeline-box h3, .game-columns h3, .grade-variants h3, .science-safety h3, .mini-worksheet h3 { margin: 0 0 .55rem; font-family: inherit; font-size: 1.05rem; color: var(--leaf-dark); }
+.game-facts p, .game-facts ul, .game-columns p, .game-columns ul, .game-columns ol, .grade-variants p, .science-safety p { margin: 0; }
+.game-facts ul, .game-columns ul, .game-columns ol { padding-left: 1.2rem; }
+.timeline-box { margin: 1rem 0; border-left: 5px solid var(--sun); }
+.timeline-box ol { display: grid; grid-template-columns: repeat(5, 1fr); gap: .75rem; list-style: none; margin: .8rem 0 0; padding: 0; }
+.timeline-box li { padding: .65rem; background: #f5f5ec; border-radius: .65rem; font-size: .88rem; }
+.timeline-box b { display: block; color: var(--coral); }
+.game-columns { display: grid; grid-template-columns: 1.15fr .85fr; gap: 1rem; margin: 1rem 0; }
+.game-columns section { min-width: 0; }
+.game-columns h3:not(:first-child) { margin-top: 1.2rem; }
+.grade-variants { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; margin: 1rem 0; }
+.grade-variants section:nth-child(1) { border-top: 4px solid var(--sun); }
+.grade-variants section:nth-child(2) { border-top: 4px solid var(--leaf); }
+.grade-variants section:nth-child(3) { border-top: 4px solid var(--coral); }
+.science-safety { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; margin: 1rem 0; }
+.science-safety section:first-child { background: #fff3d7; border-color: #e7c981; }
+.mini-worksheet { margin-top: 1rem; }
+.next-page { display: flex; align-items: end; justify-content: space-between; gap: 2rem; }
+.next-page h2 { font-size: clamp(2rem, 4vw, 3.4rem); }
+.button-link { display: inline-block; flex: 0 0 auto; padding: .85rem 1.15rem; border-radius: 999px; background: var(--leaf); color: white; text-decoration: none; font-weight: 900; }
 .site-footer { padding: 2.5rem 0; border-top: 1px solid var(--line); color: var(--muted); }
 .footer-inner { width: min(1120px, calc(100% - 2rem)); margin: auto; display: flex; justify-content: space-between; gap: 1rem; }
 .footer-inner p { margin: 0; }
@@ -118,10 +170,16 @@ h1 { margin: 0; font-size: clamp(3.4rem, 9vw, 7.5rem); letter-spacing: -.07em; }
   .header-inner { display: block; padding-top: .65rem; }
   .tabs { margin-left: 0; }
   .hero { min-height: 630px; }
-  .section-head, .morph-card, .activity-hero { grid-template-columns: 1fr; }
+  .section-head, .morph-card, .activity-hero, .source-panel { grid-template-columns: 1fr; }
   .specimen-list { grid-template-columns: repeat(2, 1fr); }
-  .seed-grid, .steps { grid-template-columns: repeat(2, 1fr); }
+  .seed-grid, .steps, .steps.steps-six, .classification-grid, .classification-grid.five-up { grid-template-columns: repeat(2, 1fr); }
   .station-grid { grid-template-columns: repeat(2, 1fr); }
+  .source-list { grid-column: auto; grid-template-columns: 1fr; }
+  .game-header { display: block; }
+  .game-header .activity-meta { justify-content: flex-start; max-width: none; }
+  .game-facts { grid-template-columns: repeat(2, 1fr); }
+  .timeline-box ol { grid-template-columns: repeat(3, 1fr); }
+  .game-columns, .science-safety { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
@@ -129,7 +187,7 @@ h1 { margin: 0; font-size: clamp(3.4rem, 9vw, 7.5rem); letter-spacing: -.07em; }
   .hero::after { background: linear-gradient(0deg, rgba(250,247,237,.98) 0%, rgba(250,247,237,.82) 52%, rgba(250,247,237,.08) 82%); }
   .hero-copy { margin-bottom: 2.3rem; }
   h1 { font-size: 3.25rem; }
-  .home-grid, .feature-grid, .safety-grid, .specimen-list, .seed-grid, .steps, .station-grid { grid-template-columns: 1fr; }
+  .home-grid, .feature-grid, .safety-grid, .specimen-list, .seed-grid, .steps, .steps.steps-six, .station-grid, .classification-grid, .classification-grid.five-up, .game-facts, .grade-variants { grid-template-columns: 1fr; }
   .specimen-list.single-specimen { grid-template-columns: 1fr; }
   .plate { margin-inline: -.5rem; padding: .35rem; }
   .plate img { aspect-ratio: 4 / 3; }
@@ -138,6 +196,10 @@ h1 { margin: 0; font-size: clamp(3.4rem, 9vw, 7.5rem); letter-spacing: -.07em; }
   .footer-inner { display: block; }
   .record-table { font-size: .78rem; }
   .record-table th, .record-table td { padding: .4rem; }
+  .classification-figure, .game-visual { margin-inline: -.5rem; padding: .35rem; }
+  .timeline-box ol { grid-template-columns: 1fr 1fr; }
+  .next-page { display: block; }
+  .button-link { margin-top: 1rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -152,5 +214,11 @@ h1 { margin: 0; font-size: clamp(3.4rem, 9vw, 7.5rem); letter-spacing: -.07em; }
   .section { padding: 0; }
   .wrap { width: 100%; }
   .worksheet { break-inside: avoid; margin: 0; }
-  .activity-hero, .station-grid { display: none; }
+  .activity-hero, .station-grid, .game-visual, .role-strip, .next-page { display: none; }
+  .game-detail { break-before: page; }
+  .game-detail .section, .game-detail { padding: 0; }
+  .game-facts, .grade-variants, .science-safety, .game-columns { display: block; }
+  .game-facts section, .grade-variants section, .science-safety section, .game-columns section, .timeline-box { break-inside: avoid; margin: 0 0 4mm; }
+  .timeline-box ol { display: block; }
+  .overview-table { min-width: 0; font-size: 8.5pt; }
 }

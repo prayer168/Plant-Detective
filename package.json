@@ -1,8 +1,8 @@
 {
   "name": "plant-detective",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "private": true,
-  "description": "植物偵探：台灣校園植物靜態觀察教材",
+  "description": "植物偵探：臺灣校園植物、果實種子與花草五感遊戲教材",
   "scripts": {
     "check": "node scripts/verify.mjs"
   }

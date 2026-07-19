@@ -49,13 +49,18 @@ for (const viewport of viewports) {
       overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1,
       brokenImages: [...document.images].filter((image) => !image.complete || image.naturalWidth === 0).map((image) => image.src),
       cards: document.querySelectorAll('.plant-card').length,
-      plates: document.querySelectorAll('.plate img').length
+      plates: document.querySelectorAll('.plate img').length,
+      classificationFigures: document.querySelectorAll('.classification-figure img').length,
+      gameDetails: document.querySelectorAll('.game-detail').length,
+      gameVisuals: document.querySelectorAll('.game-visual img').length
     }));
     if (state.h1 !== 1) failures.push(`${viewport.name}/${file}: h1=${state.h1}`);
     if (state.current !== 1) failures.push(`${viewport.name}/${file}: aria-current=${state.current}`);
     if (state.overflow) failures.push(`${viewport.name}/${file}: horizontal overflow`);
     if (state.brokenImages.length) failures.push(`${viewport.name}/${file}: broken images ${state.brokenImages.join(', ')}`);
     if (file === 'plants.html' && (state.cards !== 61 || state.plates !== 13)) failures.push(`${viewport.name}/${file}: cards=${state.cards}, plates=${state.plates}`);
+    if (file === 'seeds.html' && state.classificationFigures !== 6) failures.push(`${viewport.name}/${file}: classificationFigures=${state.classificationFigures}`);
+    if ((file === 'game-one.html' || file === 'game-two.html') && (state.gameDetails !== 4 || state.gameVisuals !== 4)) failures.push(`${viewport.name}/${file}: gameDetails=${state.gameDetails}, gameVisuals=${state.gameVisuals}`);
     if (messages.length) failures.push(`${viewport.name}/${file}: ${messages.join(' | ')}`);
 
     const stem = file.replace('.html', '');
@@ -74,4 +79,4 @@ if (failures.length) {
   console.error(failures.join('\n'));
   process.exit(1);
 }
-console.log('PASS: 18 page/viewport combinations; 61 cards; 13 plant plates; no browser errors, broken images, or horizontal overflow');
+console.log('PASS: 18 page/viewport combinations; 61 cards; 13 plant plates; 6 classification figures; 8 sensory games; no browser errors, broken images, or horizontal overflow');
