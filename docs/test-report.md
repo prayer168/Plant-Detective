@@ -34,6 +34,7 @@
 - 生成圖科學修正：茄苳欄位改為清楚的三出複葉；黑板樹果實改為成對細長蓇葖果並保留種毛提示；新增圖版目視確認五欄、無文字偽影，並呈現紅刺露兜樹葉刺、千頭木麻黃灌木型與捲斗櫟環紋殼斗；大實孔雀豆單種圖確認二回羽狀複葉、黃白花序、莢果與純紅種子。
 - 新增 6 張果實／種子圖目視確認分類欄位、剖面、種子構造與散播動作清楚；新增 8 張遊戲圖確認不採摘、手搧聞香、密封聲音罐、教師分裝可食香草等安全動作。
 - 新增羽狀複葉四欄圖目視確認一回奇數／偶數羽狀、二回與三回的葉軸分枝層級，以及整片複葉基部的腋芽位置。
+- 全站 6 頁導覽列已移除圓形「葉」圖示；桌機與手機截圖確認只保留「植物偵探」文字首頁連結，導覽間距正常。
 - 圖版文字全部放在 HTML，不把生成圖內文字當作教材答案。
 
 證據截圖位於 `docs/screenshots/`，每個頁面各保存 desktop、tablet、mobile 首屏，另保存植物頁與葉子形態頁尾端三種 viewport，共 24 張。
@@ -52,7 +53,7 @@
 
 ## GitHub Pages 公開環境
 
-- 內容提交 `af486cc` 推送至 `main` 後，GitHub Pages 狀態為 `built`。
+- 版本 1.2.2 推送至 `main` 後，GitHub Pages 狀態為 `built`。
 - 公開網址：`https://prayer168.github.io/Plant-Detective/`；首頁、植物頁、CSS 與新增的 `plants-13-peacock-tree.png` 均回傳 HTTP 200。
 - 本次另抽查 `seeds.html`、`game-one.html`、`game-two.html`、`fruit-origin-types.png` 與 `game-08-memory.png`，均回傳 HTTP 200。
 - 新增的 `leaves.html` 羽狀複葉專區與 `leaf-pinnate-compound.png` 均回傳 HTTP 200；公開文字包含一回、二回、三回及多回羽狀複葉。

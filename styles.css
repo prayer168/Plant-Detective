@@ -31,7 +31,6 @@ a { color: inherit; }
 .site-header { position: sticky; top: 0; z-index: 20; background: rgba(251, 248, 239, .96); border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
 .header-inner { width: min(1180px, calc(100% - 2rem)); margin: auto; display: flex; align-items: center; gap: 1.25rem; min-height: 76px; }
 .brand { display: inline-flex; align-items: center; gap: .65rem; text-decoration: none; font-weight: 900; letter-spacing: .08em; white-space: nowrap; }
-.brand-mark { width: 2.15rem; aspect-ratio: 1; border-radius: 50% 50% 48% 52%; display: grid; place-items: center; background: var(--leaf); color: white; transform: rotate(-8deg); }
 .tabs { display: flex; gap: .35rem; overflow-x: auto; padding: .55rem 0; margin-left: auto; scrollbar-width: thin; }
 .tabs a { white-space: nowrap; text-decoration: none; font-size: .94rem; font-weight: 750; padding: .62rem .82rem; border-radius: 999px; color: var(--muted); }
 .tabs a:hover, .tabs a:focus-visible { background: var(--moss); color: var(--leaf-dark); outline: none; }
